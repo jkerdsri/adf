@@ -1,0 +1,9 @@
+{
+	"name": "ccv-adf-sf",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c4c0d599-a864-4cf3-a3a6-c2472d3ee2d5",
+		"tenantId": "680306ad-fc6c-42d9-a312-e6cf477d5dac"
+	}
+}
