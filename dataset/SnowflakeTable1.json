@@ -23,7 +23,7 @@
 		],
 		"typeProperties": {
 			"schema": "JD_SCHEMA",
-			"table": "AGENTS_DEST"
+			"table": "SALESFORCES_ACCOUNT_DATA"
 		}
 	}
 }
