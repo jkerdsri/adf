@@ -1,5 +1,5 @@
 {
-	"name": "pipeline2",
+	"name": "Snowflake_to_Salesforce",
 	"properties": {
 		"activities": [
 			{
@@ -22,7 +22,7 @@
 						}
 					},
 					"sink": {
-						"type": "SalesforceV2Sink",
+						"type": "SalesforceSink",
 						"writeBatchSize": 100000,
 						"writeBehavior": "upsert",
 						"externalIdFieldName": "Name",
