@@ -5,8 +5,7 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"connectionString": "DefaultEndpointsProtocol=https;AccountName=ccvadf;EndpointSuffix=core.windows.net;",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDM1MEVFMDhGLUEzNEQtNEMyNi05MUExLUY4OTkyNUZFRkZFMF9mOWIwNzRlNi0yYzVhLTRiZDUtYTYzZC03ZGY0YWNiMjgzZmIiDQp9"
+			"sasUri": "https://ccvadf.blob.core.windows.net/?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2025-01-01T11:45:14Z&st=2024-02-15T03:45:14Z&spr=https&sig=mMdLpW8W81vgRgR%2FcK8hrAYq2juTtOHkgiv1k6CBXHM%3D?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2025-01-01T11:45:14Z&st=2024-02-15T03:45:14Z&spr=https&sig=mMdLpW8W81vgRgR%2FcK8hrAYq2juTtOHkgiv1k6CBXHM%3D"
 		}
 	}
 }
