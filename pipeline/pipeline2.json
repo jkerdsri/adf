@@ -25,10 +25,17 @@
 						"type": "SalesforceV2Sink",
 						"writeBatchSize": 100000,
 						"writeBehavior": "upsert",
-						"externalIdFieldName": "",
+						"externalIdFieldName": "Name",
 						"ignoreNullValues": false
 					},
-					"enableStaging": false
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "AzureBlobStorage1",
+							"type": "LinkedServiceReference"
+						},
+						"path": "adf-blob"
+					}
 				},
 				"inputs": [
 					{
