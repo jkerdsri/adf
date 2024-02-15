@@ -1,0 +1,29 @@
+{
+	"name": "SnowflakeTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "CODE",
+				"type": "VARCHAR",
+				"precision": 100,
+				"scale": 0
+			},
+			{
+				"name": "NAME",
+				"type": "VARCHAR",
+				"precision": 100,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "JD_SCHEMA",
+			"table": "AGENTS_DEST"
+		}
+	}
+}
