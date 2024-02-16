@@ -1,5 +1,5 @@
 {
-	"name": "Snowflake_to_Salesforce",
+	"name": "Salesforce_to_Snowflake_2",
 	"properties": {
 		"activities": [
 			{
@@ -16,17 +16,13 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "SnowflakeSource",
-						"exportSettings": {
-							"type": "SnowflakeExportCopyCommand"
-						}
+						"type": "SalesforceV2Source"
 					},
 					"sink": {
-						"type": "SalesforceSink",
-						"writeBatchSize": 100000,
-						"writeBehavior": "upsert",
-						"externalIdFieldName": "Id",
-						"ignoreNullValues": true
+						"type": "SnowflakeSink",
+						"importSettings": {
+							"type": "SnowflakeImportCopyCommand"
+						}
 					},
 					"enableStaging": true,
 					"stagingSettings": {
@@ -41,21 +37,21 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "ID",
+									"name": "Id",
 									"type": "String"
 								},
 								"sink": {
-									"name": "Id",
+									"name": "ID",
 									"type": "String"
 								}
 							},
 							{
 								"source": {
-									"name": "NAME",
+									"name": "Name",
 									"type": "String"
 								},
 								"sink": {
-									"name": "Name",
+									"name": "NAME",
 									"type": "String"
 								}
 							}
@@ -64,13 +60,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "SnowflakeTable1",
+						"referenceName": "SalesforceObject1",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "SalesforceObject1",
+						"referenceName": "SnowflakeTable1",
 						"type": "DatasetReference"
 					}
 				]

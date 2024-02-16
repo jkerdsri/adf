@@ -23,7 +23,7 @@
 		],
 		"typeProperties": {
 			"schema": "JD_SCHEMA",
-			"table": "SALESFORCES_ACCOUNT_DATA"
+			"table": "SALESFORCES_ACCOUNT_DATA_2"
 		}
 	}
 }
